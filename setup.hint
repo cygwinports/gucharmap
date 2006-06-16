@@ -1,0 +1,4 @@
+category: Gnome Editors
+requires: cygwin atk gtk2-x11 libgnome2 libgnomeui2
+sdesc: "GNOME unicode character map"
+ldesc: "gucharmap is a featureful unicode character map for GNOME"
