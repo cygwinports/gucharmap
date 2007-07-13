@@ -1,4 +1,4 @@
 category: Gnome Editors
-requires: cygwin libgucharmap5 libgnomeui2
+requires: cygwin glib2 gtk2-x11 libgucharmap5 libgnome2 libgnomeui2 libintl8 pango
 sdesc: "GNOME unicode character map (application)"
 ldesc: "gucharmap is a featureful unicode character map for GNOME"

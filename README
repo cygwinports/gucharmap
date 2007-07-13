@@ -3,11 +3,14 @@ gucharmap
 gucharmap is a featureful unicode character map for GNOME.
 
 Runtime requirements:
-  cygwin-1.5.22-1
-  atk-1.12.3-1
-  gtk2-x11-2.10.6-1
-  libgnome2-2.16.0-1
-  libgnomeui2-2.16.1-1
+  cygwin-1.5.24-2
+  atk-1.18.0-1
+  glib2-2.12.12-2
+  gtk2-x11-2.10.13-1
+  libgnome2-2.18.0-1
+  libgnomeui2-2.18.1-1
+  libintl8-0.15-1
+  pango-1.16.4-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -34,36 +37,38 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gucharmap-1.8.0-X-src.tar.bz2
+  unpack gucharmap-1.10.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gucharmap-1.8.0-X.cygport all
+  cygport ./gucharmap-1.10.0-X.cygport all
 
 This will create:
-  /usr/src/gucharmap-1.8.0-X-src.tar.bz2
-  /usr/src/gucharmap-1.8.0-X.tar.bz2
-  /usr/src/libgucharmap-devel-1.8.0-X.tar.bz2
-  /usr/src/libgucharmap5-1.8.0-X.tar.bz2
+  /usr/src/gucharmap-1.10.0-X-src.tar.bz2
+  /usr/src/gucharmap-1.10.0-X.tar.bz2
+  /usr/src/libgucharmap-devel-1.10.0-X.tar.bz2
+  /usr/src/libgucharmap5-1.10.0-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
+(gucharmap)
   /etc/postinstall/gucharmap.sh
-  /usr/bin/charmap.exe
-  /usr/bin/gnome-character-map.exe
+  /etc/preremove/gucharmap.sh
+  /usr/bin/charmap
+  /usr/bin/gnome-character-map
   /usr/bin/gucharmap.exe
   /usr/share/applications/gucharmap.desktop
-  /usr/share/doc/Cygwin/gucharmap-1.8.0.README
-  /usr/share/doc/gucharmap-1.8.0/AUTHORS
-  /usr/share/doc/gucharmap-1.8.0/COPYING
-  /usr/share/doc/gucharmap-1.8.0/COPYING.LIB
-  /usr/share/doc/gucharmap-1.8.0/ChangeLog
-  /usr/share/doc/gucharmap-1.8.0/INSTALL
-  /usr/share/doc/gucharmap-1.8.0/NEWS
-  /usr/share/doc/gucharmap-1.8.0/README
-  /usr/share/doc/gucharmap-1.8.0/TODO
+  /usr/share/doc/Cygwin/gucharmap-1.10.0.README
+  /usr/share/doc/gucharmap-1.10.0/AUTHORS
+  /usr/share/doc/gucharmap-1.10.0/COPYING
+  /usr/share/doc/gucharmap-1.10.0/COPYING.LIB
+  /usr/share/doc/gucharmap-1.10.0/ChangeLog
+  /usr/share/doc/gucharmap-1.10.0/INSTALL
+  /usr/share/doc/gucharmap-1.10.0/NEWS
+  /usr/share/doc/gucharmap-1.10.0/README
+  /usr/share/doc/gucharmap-1.10.0/TODO
   /usr/share/gnome/help/gucharmap/C/figures/gucharmap_start_window.png
   /usr/share/gnome/help/gucharmap/C/figures/gucharmap_window.png
   /usr/share/gnome/help/gucharmap/C/gucharmap.xml
@@ -74,6 +79,9 @@ Files included in the binary package:
   /usr/share/gnome/help/gucharmap/de/figures/gucharmap_window.png
   /usr/share/gnome/help/gucharmap/de/gucharmap.xml
   /usr/share/gnome/help/gucharmap/de/legal.xml
+  /usr/share/gnome/help/gucharmap/en_GB/figures/gucharmap_start_window.png
+  /usr/share/gnome/help/gucharmap/en_GB/figures/gucharmap_window.png
+  /usr/share/gnome/help/gucharmap/en_GB/gucharmap.xml
   /usr/share/gnome/help/gucharmap/es/figures/gucharmap_start_window.png
   /usr/share/gnome/help/gucharmap/es/figures/gucharmap_window.png
   /usr/share/gnome/help/gucharmap/es/gucharmap.xml
@@ -180,6 +188,7 @@ Files included in the binary package:
   /usr/share/omf/gucharmap/gucharmap-C.omf
   /usr/share/omf/gucharmap/gucharmap-bg.omf
   /usr/share/omf/gucharmap/gucharmap-de.omf
+  /usr/share/omf/gucharmap/gucharmap-en_GB.omf
   /usr/share/omf/gucharmap/gucharmap-es.omf
   /usr/share/omf/gucharmap/gucharmap-fi.omf
   /usr/share/omf/gucharmap/gucharmap-fr.omf
@@ -191,8 +200,8 @@ Files included in the binary package:
   /usr/share/omf/gucharmap/gucharmap-zh_CN.omf
   /usr/share/omf/gucharmap/gucharmap-zh_TW.omf
 
-(libgucharmap5)
-  /usr/bin/cyggucharmap-5.dll
+(libgucharmap6)
+  /usr/bin/cyggucharmap-6.dll
 
 (libgucharmap-devel)
   /usr/include/gucharmap/gucharmap-block-chapters.h
@@ -214,6 +223,9 @@ Files included in the binary package:
 --------------------
 
 Port Notes:
+
+----- version 1.10.0-1 -----
+Version bump for GNOME 2.18.
 
 ----- version 1.8.0-1 -----
 Version bump for GNOME 2.16.

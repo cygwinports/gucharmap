@@ -1,5 +1,5 @@
 category: Gnome Editors
-requires: cygwin atk gtk2-x11 libgnome2
+requires: cygwin atk glib2 gtk2-x11 libgnome2 libintl8 pango
 external-source: gucharmap
 sdesc: "GNOME unicode character map (library)"
 ldesc: "gucharmap is a featureful unicode character map for GNOME"
