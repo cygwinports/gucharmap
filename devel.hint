@@ -1,5 +1,5 @@
 category: Gnome Editors
-requires: cygwin atk-devel glib2-devel gtk2-x11-devel libgnome2-devel gettext pango-devel
+requires: cygwin libgucharmap6 atk-devel GConf2-devel glib2-devel gtk2-x11-devel gettext pango-devel
 external-source: gucharmap
 sdesc: "GNOME unicode character map (development)"
 ldesc: "gucharmap is a featureful unicode character map for GNOME"
