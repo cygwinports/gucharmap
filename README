@@ -3,11 +3,11 @@ gucharmap
 gucharmap is a featureful unicode character map for GNOME.
 
 Runtime requirements:
-  cygwin-1.5.25-11
+  cygwin-1.5.25-15
   atk-1.22.0-1
   GConf2-2.22.0-1
   glib2-2.16.3-1
-  gtk2-x11-2.12.9-1
+  gtk2-x11-2.12.10-1
   libintl8-0.15-1
   pango-1.20.3-1
 
@@ -16,7 +16,7 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.10-1.10.1-1
   binutils-20080523-1
-  cygport-0.3.11-1
+  cygport-0.3.12-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   gnome-common-2.20.0-2
@@ -24,7 +24,7 @@ Build requirements:
   intltool-0.37.1-1
   libtool-2.2.2-2
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   rarian-0.8.0-1
   sed-4.1.5-2
 
@@ -37,17 +37,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gucharmap-2.22.1-X-src.tar.bz2
+  unpack gucharmap-2.22.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gucharmap-2.22.1-X.cygport all
+  cygport ./gucharmap-2.22.3-X.cygport all
 
 This will create:
-  /usr/src/gucharmap-2.22.1-X-src.tar.bz2
-  /usr/src/gucharmap-2.22.1-X.tar.bz2
-  /usr/src/libgucharmap-devel-2.22.1-X.tar.bz2
-  /usr/src/libgucharmap6-2.22.1-X.tar.bz2
+  /usr/src/gucharmap-2.22.3-X-src.tar.bz2
+  /usr/src/gucharmap-2.22.3-X.tar.bz2
+  /usr/src/libgucharmap-devel-2.22.3-X.tar.bz2
+  /usr/src/libgucharmap6-2.22.3-X.tar.bz2
 
 -------------------------------------------
 
@@ -61,14 +61,14 @@ Files included in the binary package:
   /usr/bin/gnome-character-map
   /usr/bin/gucharmap.exe
   /usr/share/applications/gucharmap.desktop
-  /usr/share/doc/gucharmap-2.22.1/AUTHORS
-  /usr/share/doc/gucharmap-2.22.1/COPYING
-  /usr/share/doc/gucharmap-2.22.1/COPYING.LIB
-  /usr/share/doc/gucharmap-2.22.1/ChangeLog
-  /usr/share/doc/gucharmap-2.22.1/INSTALL
-  /usr/share/doc/gucharmap-2.22.1/NEWS
-  /usr/share/doc/gucharmap-2.22.1/README
-  /usr/share/doc/gucharmap-2.22.1/TODO
+  /usr/share/doc/gucharmap-2.22.3/AUTHORS
+  /usr/share/doc/gucharmap-2.22.3/COPYING
+  /usr/share/doc/gucharmap-2.22.3/COPYING.LIB
+  /usr/share/doc/gucharmap-2.22.3/ChangeLog
+  /usr/share/doc/gucharmap-2.22.3/INSTALL
+  /usr/share/doc/gucharmap-2.22.3/NEWS
+  /usr/share/doc/gucharmap-2.22.3/README
+  /usr/share/doc/gucharmap-2.22.3/TODO
   /usr/share/gnome/help/gucharmap/C/figures/gucharmap_start_window.png
   /usr/share/gnome/help/gucharmap/C/figures/gucharmap_window.png
   /usr/share/gnome/help/gucharmap/C/gucharmap.xml
@@ -240,6 +240,9 @@ Files included in the binary package:
 --------------------
 
 Port Notes:
+
+----- version 2.22.3-1 -----
+Version bump.
 
 ----- version 2.22.1-1 -----
 Version bump for GNOME 2.22.
