@@ -5,12 +5,12 @@ gucharmap is a featureful unicode character map for GNOME.
 Runtime requirements:
   cygwin-1.5.25-15
   libatk1.0_0-1.24.0-1
-  libcairo2-1.8.4-1
+  libcairo2-1.8.6-1
   libgconf2_4-2.24.0-1
-  libglib2.0_0-2.18.3-1
-  libgtk2.0_0-2.14.5-1
+  libglib2.0_0-2.18.4-1
+  libgtk2.0_0-2.14.7-1
   libintl8-0.17-2
-  libpango1.0_0-1.22.3-1
+  libpango1.0_0-1.22.4-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -21,7 +21,7 @@ Build requirements:
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   gnome-common-2.24.0-1
-  gnome-doc-utils-0.14.0-1
+  gnome-doc-utils-0.14.2-1
   intltool-0.40.5-1
   libtool-2.2.6a-1
   make-3.81-1
@@ -38,17 +38,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gucharmap-2.24.2-X-src.tar.bz2
+  unpack gucharmap-2.24.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gucharmap-2.24.2-X.cygport all
+  cygport ./gucharmap-2.24.3-X.cygport all
 
 This will create:
-  /usr/src/gucharmap-2.24.2-X-src.tar.bz2
-  /usr/src/gucharmap-2.24.2-X.tar.bz2
-  /usr/src/libgucharmap-devel-2.24.2-X.tar.bz2
-  /usr/src/libgucharmap7-2.24.2-X.tar.bz2
+  /usr/src/gucharmap-2.24.3-X-src.tar.bz2
+  /usr/src/gucharmap-2.24.3-X.tar.bz2
+  /usr/src/libgucharmap-devel-2.24.3-X.tar.bz2
+  /usr/src/libgucharmap7-2.24.3-X.tar.bz2
 
 -------------------------------------------
 
@@ -62,13 +62,13 @@ Files included in the binary package:
   /usr/bin/gnome-character-map
   /usr/bin/gucharmap.exe
   /usr/share/applications/gucharmap.desktop
-  /usr/share/doc/gucharmap-2.24.2/AUTHORS
-  /usr/share/doc/gucharmap-2.24.2/COPYING
-  /usr/share/doc/gucharmap-2.24.2/ChangeLog
-  /usr/share/doc/gucharmap-2.24.2/INSTALL
-  /usr/share/doc/gucharmap-2.24.2/NEWS
-  /usr/share/doc/gucharmap-2.24.2/README
-  /usr/share/doc/gucharmap-2.24.2/TODO
+  /usr/share/doc/gucharmap-2.24.3/AUTHORS
+  /usr/share/doc/gucharmap-2.24.3/COPYING
+  /usr/share/doc/gucharmap-2.24.3/ChangeLog
+  /usr/share/doc/gucharmap-2.24.3/INSTALL
+  /usr/share/doc/gucharmap-2.24.3/NEWS
+  /usr/share/doc/gucharmap-2.24.3/README
+  /usr/share/doc/gucharmap-2.24.3/TODO
   /usr/share/gnome/help/gucharmap/C/figures/gucharmap_start_window.png
   /usr/share/gnome/help/gucharmap/C/figures/gucharmap_window.png
   /usr/share/gnome/help/gucharmap/C/gucharmap.xml
@@ -263,6 +263,9 @@ Files included in the binary package:
 --------------------
 
 Port Notes:
+
+----- version 2.24.3-1 -----
+Version bump.
 
 ----- version 2.24.2-1 -----
 Version bump for GNOME 2.24.
