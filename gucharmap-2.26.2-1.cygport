@@ -1,0 +1,14 @@
+inherit pygtk gnome2
+
+DESCRIPTION="GNOME Character Map"
+HOMEPAGE="http://gucharmap.sourceforge.net/"
+
+PATCH_URI="2.26-no-undefined.patch"
+
+PKG_NAMES="${PN} lib${PN}7 lib${PN}-devel python-${PN}"
+gucharmap_CONTENTS='--exclude=*.dll --exclude=gtk-doc --exclude=pygtk etc/ usr/bin/ usr/share/'
+libgucharmap7_CONTENTS="usr/bin/*-7.dll"
+libgucharmap_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
+python_gucharmap_CONTENTS="${PYTHON_SITELIB#/}/ ${PYGTK_DATADIR#/}/"
+
+CYGCONF_ARGS="--disable-introspection --enable-python-bindings"

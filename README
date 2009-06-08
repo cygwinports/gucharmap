@@ -3,25 +3,28 @@ gucharmap
 gucharmap is a featureful unicode character map for GNOME.
 
 Runtime requirements:
-  cygwin-1.7.0-45
+  cygwin-1.7.0-48
   libatk1.0_0-1.26.0-1
   libcairo2-1.8.6-10
   libgcc1-4.3.2-2
-  libgconf2_4-2.26.0-1
-  libglib2.0_0-2.20.1-1
-  libgtk2.0_0-2.16.1-1
+  libgconf2_4-2.26.2-1
+  libglib2.0_0-2.20.3-1
+  libgtk2.0_0-2.16.2-1
   libintl8-0.17-10
-  libpango1.0_0-1.24.1-1
+  libpango1.0_0-1.24.2-1
+  python-2.5.4-10
+  python-gobject2-2.16.1-10
+  python-gtk2-2.14.1-1
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
+  automake1.10-1.10.2-10
   binutils-20080624-2
   cygport-0.9.6-1
   gawk-3.1.6-2
   gcc4-core-4.3.2-2
-  gnome-common-2.24.0-1
+  gnome-common-2.26.0-1
   gnome-doc-utils-0.16.1-1
   intltool-0.40.6-1
   libtool-2.2.7a-12
@@ -39,17 +42,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gucharmap-2.26.1-X-src.tar.bz2
+  unpack gucharmap-2.26.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gucharmap-2.26.1-X.cygport all
+  cygport ./gucharmap-2.26.2-X.cygport all
 
 This will create:
-  /usr/src/gucharmap-2.26.1-X-src.tar.bz2
-  /usr/src/gucharmap-2.26.1-X.tar.bz2
-  /usr/src/libgucharmap-devel-2.26.1-X.tar.bz2
-  /usr/src/libgucharmap7-2.26.1-X.tar.bz2
+  /usr/src/gucharmap-2.26.2-X-src.tar.bz2
+  /usr/src/gucharmap-2.26.2-X.tar.bz2
+  /usr/src/libgucharmap-devel-2.26.2-X.tar.bz2
+  /usr/src/libgucharmap7-2.26.2-X.tar.bz2
+  /usr/src/python-gucharmap-2.26.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -260,9 +264,18 @@ Files included in the binary package:
   /usr/share/gtk-doc/html/gucharmap/style.css
   /usr/share/gtk-doc/html/gucharmap/up.png
 
+(python-gucharmap)
+  /usr/lib/python2.5/site-packages/gtk-2.0/gucharmap.dll
+  /usr/lib/python2.5/site-packages/gtk-2.0/gucharmap.la
+  /usr/share/pygtk/2.0/defs/gucharmap.defs
+
 --------------------
 
 Port Notes:
+
+----- version 2.26.2-1 -----
+Version bump.
+Added Python bindings.
 
 ----- version 2.26.1-1 -----
 Version bump.
