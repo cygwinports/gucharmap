@@ -3,31 +3,32 @@ gucharmap
 gucharmap is a featureful unicode character map for GNOME.
 
 Runtime requirements:
-  cygwin-1.7.0-50
+  cygwin-1.7.0-60
   libatk1.0_0-1.26.0-1
   libcairo2-1.8.8-1
   libgcc1-4.3.2-2
   libgconf2_4-2.26.2-1
-  libglib2.0_0-2.20.4-1
-  libgtk2.0_0-2.16.3-1
+  libglib2.0_0-2.20.5-1
+  libgtk2.0_0-2.16.5-1
   libintl8-0.17-11
-  libpango1.0_0-1.24.3-1
+  libpango1.0_0-1.24.5-1
   python-2.5.4-10
-  python-gobject2-2.16.1-10
-  python-gtk2-2.14.1-1
+  python-gobject2.0-2.18.0-1
+  python-gtk2.0-2.16.0-1
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
   automake1.10-1.10.2-10
-  binutils-20080624-2
-  cygport-0.9.7-1
+  binutils-2.19.51-1
+  cygport-0.9.9-1
   gawk-3.1.6-2
   gcc4-core-4.3.2-2
   gnome-common-2.26.0-2
   gnome-doc-utils-0.16.1-2
+  gobject-introspection-0.6.5-1
   intltool-0.40.6-1
-  libtool-2.2.7a-13
+  libtool-2.2.7a-14
   make-3.81-2
   pkg-config-0.23b-10
   rarian-0.8.1-11
@@ -49,6 +50,7 @@ Build instructions:
   cygport ./gucharmap-2.26.3.1-X.cygport all
 
 This will create:
+  /usr/src/gobject-introspection-Gucharmap2.0-2.26.3.1-X.tar.bz2
   /usr/src/gucharmap-2.26.3.1-X-src.tar.bz2
   /usr/src/gucharmap-2.26.3.1-X.tar.bz2
   /usr/src/libgucharmap-devel-2.26.3.1-X.tar.bz2
@@ -264,6 +266,10 @@ Files included in the binary package:
   /usr/share/gtk-doc/html/gucharmap/style.css
   /usr/share/gtk-doc/html/gucharmap/up.png
 
+(gobject-introspection-Gucharmap2.0)
+  /usr/lib/girepository-1.0/Gucharmap-2.0.typelib
+  /usr/share/gir-1.0/Gucharmap-2.0.gir
+
 (python-gucharmap)
   /usr/lib/python2.5/site-packages/gtk-2.0/gucharmap.dll
   /usr/lib/python2.5/site-packages/gtk-2.0/gucharmap.la
@@ -272,6 +278,9 @@ Files included in the binary package:
 --------------------
 
 Port Notes:
+
+----- version 2.26.3.1-2 -----
+Added GObjectIntrospection data.
 
 ----- version 2.26.3.1-1 -----
 Version bump.
