@@ -1,5 +1,0 @@
-category: Gnome
-requires: libgucharmap7 gobject-introspection-Atk1.0 gobject-introspection-GLib2.0 gobject-introspection-GdkPixbuf2.0 gobject-introspection-Gtk2.0 gobject-introspection-Pango1.0 gobject-introspection-x11
-external-source: gucharmap
-sdesc: "GNOME unicode character map (GObjectIntrospection data)"
-ldesc: "gucharmap is a featureful unicode character map for GNOME"

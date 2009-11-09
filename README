@@ -50,7 +50,7 @@ Build instructions:
   cygport ./gucharmap-2.28.1-X.cygport all
 
 This will create:
-  /usr/src/gobject-introspection-Gucharmap2.0-2.28.1-X.tar.bz2
+  /usr/src/girepository-Gucharmap2.0-2.28.1-X.tar.bz2
   /usr/src/gucharmap-2.28.1-X-src.tar.bz2
   /usr/src/gucharmap-2.28.1-X.tar.bz2
   /usr/src/libgucharmap-devel-2.28.1-X.tar.bz2
@@ -63,6 +63,7 @@ Port Notes:
 
 ----- version 2.28.1-1 -----
 Version bump for GNOME 2.28.
+Renamed girepository package.
 
 ----- version 2.26.3.1-2 -----
 Added GObjectIntrospection data.
