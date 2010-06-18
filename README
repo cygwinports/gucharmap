@@ -4,14 +4,14 @@ gucharmap is a featureful unicode character map for GNOME.
 
 Runtime requirements:
   cygwin-1.7.5-1
-  libatk1.0_0-1.28.0-1
+  libatk1.0_0-1.30.0-1
   libcairo2-1.8.10-1
   libgcc1-4.3.4-3
-  libgconf2_4-2.28.2-1
-  libglib2.0_0-2.22.4-2
-  libgtk2.0_0-2.18.6-1
+  libgconf2_4-2.28.1-1
+  libglib2.0_0-2.24.1-1
+  libgtk2.0_0-2.20.1-1
   libintl8-0.17-11
-  libpango1.0_0-1.26.2-1
+  libpango1.0_0-1.28.0-1
   python-2.6.5-1
   python-gobject2.0-2.20.0-2
   python-gtk2.0-2.16.0-2
@@ -24,10 +24,10 @@ Build requirements:
   cygport-0.9.84-1
   gawk-3.1.7-1
   gcc4-core-4.3.4-3
-  gnome-common-2.28.0-1
+  gnome-common-2.28.0-2
   gnome-doc-utils-0.20.1-1
-  gobject-introspection-0.6.10-1
-  gtk-doc-1.14-1
+  gobject-introspection-0.6.14-1
+  gtk-doc-1.15-1
   intltool-0.41.1-1
   libtool-2.2.7a-15
   make-3.81-2
@@ -43,26 +43,26 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gucharmap-2.28.2-X-src.tar.bz2
+  unpack gucharmap-2.30.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gucharmap-2.28.2-X.cygport all
+  cygport ./gucharmap-2.30.1-X.cygport all
 
 This will create:
-  /usr/src/girepository-Gucharmap2.0-2.28.2-X.tar.bz2
-  /usr/src/gucharmap-2.28.2-X-src.tar.bz2
-  /usr/src/gucharmap-2.28.2-X.tar.bz2
-  /usr/src/libgucharmap-devel-2.28.2-X.tar.bz2
-  /usr/src/libgucharmap7-2.28.2-X.tar.bz2
-  /usr/src/python-gucharmap-2.28.2-X.tar.bz2
+  /usr/src/girepository-Gucharmap2.0-2.30.1-X.tar.bz2
+  /usr/src/gucharmap-2.30.1-X-src.tar.bz2
+  /usr/src/gucharmap-2.30.1-X.tar.bz2
+  /usr/src/libgucharmap-devel-2.30.1-X.tar.bz2
+  /usr/src/libgucharmap7-2.30.1-X.tar.bz2
+  /usr/src/python-gucharmap-2.30.1-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
 
------ version 2.28.2-2 -----
-Rebuilt bindings for Python 2.6.
+----- version 2.30.1-1 -----
+Version bump for GNOME 2.30.
 
 ----- version 2.28.2-1 -----
 Version bump.
