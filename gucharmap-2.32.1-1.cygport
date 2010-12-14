@@ -3,8 +3,7 @@ inherit pygtk gnome2
 DESCRIPTION="GNOME Character Map"
 HOMEPAGE="http://gucharmap.sourceforge.net/"
 
-PATCH_URI="2.26-no-undefined.patch
-           2.26-introspection.patch"
+PATCH_URI="2.26-no-undefined.patch"
 
 PKG_NAMES="${PN} lib${PN}7 lib${PN}-devel girepository-Gucharmap2.0 python-${PN}"
 gucharmap_CONTENTS="--exclude=*.dll --exclude=gtk-doc --exclude=pygtk
