@@ -1,0 +1,10 @@
+--- origsrc/gucharmap-3.0.0/gucharmap/Makefile.am
++++ src/gucharmap-3.0.0/gucharmap/Makefile.am
+@@ -63,6 +63,7 @@
+ libgucharmap@GUCHARMAP_LIBRARY_SUFFIX_U@_la_LDFLAGS = \
+ 	-version-info $(LIBGUCHARMAP_LT_VERSION)	\
+ 	-export-symbols-regex "^gucharmap_*"		\
++	-no-undefined		\
+ 	$(AM_LDFLAGS)
+ 
+ libgucharmap_la_LIBADD = \

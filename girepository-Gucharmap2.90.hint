@@ -1,5 +1,5 @@
 category: Gnome
-requires: libgucharmap7 girepository-Atk1.0 girepository-GLib2.0 girepository-GdkPixbuf2.0 girepository-Gtk2.0 girepository-Pango1.0 girepository-x11
+requires: libgucharmap2.90_7 girepository-Gtk3.0
 external-source: gucharmap
 sdesc: "GNOME unicode character map (GObjectIntrospection data)"
 ldesc: "gucharmap is a featureful unicode character map for GNOME"
