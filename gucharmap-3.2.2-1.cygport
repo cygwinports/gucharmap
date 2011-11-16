@@ -5,6 +5,11 @@ HOMEPAGE="http://gucharmap.sourceforge.net/"
 
 PATCH_URI="3.0-no-undefined.patch"
 
+DEPEND="gnome-common gtk-doc
+	girepository(Gtk-3.0)
+	pkgconfig(gconf-2.0)
+	pkgconfig(gtk+-3.0)"
+
 PKG_NAMES="${PN} lib${PN}2.90_7 lib${PN}2.90-devel girepository-Gucharmap2.90"
 gucharmap_CONTENTS="--exclude=*.dll --exclude=gtk-doc
                     --exclude=gir-1.0 etc/ usr/bin/ usr/share/"
