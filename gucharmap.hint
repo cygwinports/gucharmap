@@ -1,4 +1,4 @@
 category: Gnome Editors
-requires: libatk1.0_0 libcairo2 libgconf2_4 libglib2.0_0 libgtk3_0 libgucharmap2.90_7 libintl8 libpango1.0_0
+requires: libatk1.0_0 libcairo2 libglib2.0_0 libgtk3_0 libgucharmap2.90_7 libintl8 libpango1.0_0
 sdesc: "GNOME unicode character map (application)"
 ldesc: "gucharmap is a featureful unicode character map for GNOME"
