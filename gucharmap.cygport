@@ -1,10 +1,14 @@
 inherit gnome2
 
-DESCRIPTION="GNOME Character Map"
+NAME="gucharmap"
+VERSION=3.6.1
+RELEASE=1
+CATEGORY="GNOME"
+SUMMARY="GNOME unicode character map"
+DESCRIPTION="gucharmap is a featureful unicode character map for GNOME"
 HOMEPAGE="http://gucharmap.sourceforge.net/"
 
-PATCH_URI="3.4-no-undefined.patch
-           3.4-autoconf.patch"
+PATCH_URI="3.4-no-undefined.patch"
 
 DEPEND="gnome-common gtk-doc
 	girepository(Gtk-3.0)
