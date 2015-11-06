@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="gucharmap"
-VERSION=3.14.2
+VERSION=3.18.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME unicode character map"
@@ -19,6 +19,7 @@ gucharmap_CATEGORY="GNOME"
 gucharmap_CONTENTS="--exclude=*.dll --exclude=gtk-doc
                     --exclude=gir-1.0 etc/ usr/bin/ usr/share/"
 libgucharmap2_90_7_CONTENTS="usr/bin/cyggucharmap_2_90-7.dll"
+libgucharmap2_90_devel_REQUIRES="girepository-Gucharmap2.90"
 libgucharmap2_90_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/'
 libgucharmap2_90_doc_CATEGORY="Doc"
 libgucharmap2_90_doc_CONTENTS="usr/share/gtk-doc/"
