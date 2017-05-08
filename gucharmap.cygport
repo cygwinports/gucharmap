@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="gucharmap"
-VERSION=9.0.2
+VERSION=9.0.3
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME unicode character map"
